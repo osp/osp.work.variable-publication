@@ -13,9 +13,15 @@ $(window).load(function(){
         $("html").toggleClass("debug");
     });
 
+    // __________________________________ SPREAD __________________________________ //
+    $("button#spread").click(function(e){
+        e.preventDefault();
+        $(this).toggleClass("button-active");
+        $("html").toggleClass("spread");
+    });
 
-    // __________________________________ PRINT PREVIEW __________________________________ //
-    $("button#preview").click(function(e){
+    // __________________________________ HIGH RESOLUTION __________________________________ //
+    $("button#hi-res").click(function(e){
         e.preventDefault();
         $(this).toggleClass("button-active");
         $("html").toggleClass("export");
