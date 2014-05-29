@@ -1,7 +1,8 @@
 #! /usr/bin/bash
-for i in $(seq 1 40);
+while 1;
 do
- curl http://osp.constantvzw.org:9999/p/balsa2014-2015-content/export/txt > content.html
+ curl http://osp.kitchen:9999/p/variable_publication/export/txt > content.html
+ curl http://osp.kitchen:9999/p/variable_publication.css/export/txt > styles.css
  sleep 15
 done
 
