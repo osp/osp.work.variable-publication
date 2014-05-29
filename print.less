@@ -16,9 +16,9 @@
 @page-margin-top: 10mm;
 @page-margin-bottom: 15mm;
 
-@header-height: 0mm;
+@header-height: 5mm;
 @header-text: "Constant/Variable";
-@footer-height: 0mm;
+@footer-height: 5mm;
 @footer-text: counter(page-counter);
 
 
@@ -230,7 +230,6 @@ html.spread {
     .preview-page {
         outline: 1px solid black;
         float: left;
-        overflow: hidden;
 
         &:first-child {
             margin-left: @page-width !important;
@@ -322,6 +321,7 @@ div.preview-page {
     counter-increment: page-counter;
     page-break-inside: avoid;
     page-break-after: always;
+    overflow: hidden;
 
     &:nth-child(odd) .header {
         text-align: right;
