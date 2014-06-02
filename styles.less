@@ -1,6 +1,88 @@
 @import "fonts.less";
 
 body {
-    font-family: "PropCourierSans";
+    font-family: PropCourierSans;
+    font-size: 8pt;
+    line-height: 1.3em;
+}
+
+h1 {
+	-webkit-region-break-before: always;
+	    font-family: PropCourierSans;
+	    font-size: 2em;
+	line-height: 1.4em;
+}
+
+#projects article img {
+	max-width: 100%;
+	max-height: 200px;
+}
+#projects article img.portrait {
+	max-width: 39%;
+	max-height: none;
+	float: left;
+	margin-right: 0.5em;
+}
+
+#projects article div {
+    display: inline;
+	}
+
+/*#projects article div p {
+    display: inline;
+	outline: 3px ridge red; 
+}*/
+
+h1 span:nth-of-type(2n) {
+    position: relative;
+    top: 2px;
+}
+p span:nth-of-type(4n) {
+    position: relative;
+    top: 1px;
+}
+
+p + p {
+    text-indent: 1.5em;
+}
+div[lang="nl"] p {
+    padding-left: 3em;
+}
+div[lang="fr"] p {
+    padding-left: 1.5em;
+}
+div[lang="en"] p {
+
+}
+.column20 {
+    float: left;
+    height: 100%;
+    width: 20%;
+
+    & + .column20 {
+        padding-left: 0.5em;
+    }
+}
+
+.column50 {
+    float: left;
+    height: 100%;
+    width: 50%;
+    padding: 0.5em;
+
+    & + .column50 {
+        padding-left: 0.5em;
+    }
+}
+
+#colophon li {
+    display: inline;
+    
+    &:after {
+        content: " * ";
+    }
+}
+#colophon img {
+    max-width: 80px;
 }
 
