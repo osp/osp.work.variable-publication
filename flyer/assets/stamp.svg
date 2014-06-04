@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="50mm" height="50mm" viewBox="0 0 50 50">
+    <defs>
+        <style type="text/css">
+            <![CDATA[
+                @font-face {
+                    font-family: 'Crickx';
+                    src: url('http://localhost:8000/fonts/Crickx.otf') format('opentype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'PropCourierSans';
+                    src: url('http://localhost:8000/fonts/PropCourierSans.ttf') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                @font-face {
+                    font-family: 'PropCourierSans';
+                    src: url('http://localhost:8000/fonts/PropCourierSans-Bold.ttf') format('truetype');
+                    font-weight: bold;
+                    font-style: normal;
+                }
+            ]]>
+        </style>
+        <path id="textCircle" d="M40 25 A15 15 0 1 1 40 24.99999"/>
+    </defs>
+    <circle cx="25" cy="25" r="22" fill="none" stroke="white" stroke-width=".6" />
+    <text x="10" y="10" style="font-family:Crickx;font-size:7px;fill:white;letter-spacing:-.25;">
+      <textPath xlink:href="#textCircle">
+           VARIABLE@KRIEKELAAR
+      </textPath>
+    </text>
+</svg>

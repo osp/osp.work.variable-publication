@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="3.4mm" height="3.4mm" viewBox="0 0 4 4">
+    <text transform="matrix(1 0 0 1 7.1079 13.5215)" opacity="0" font-family="'MyriadPro-Regular'" font-size="12">a</text>
+    <path d="M0 2 L2 0" stroke-width=".15mm" stroke="black" stroke-linecap="square" />
+    <path d="M2 4 L4 2" stroke-width=".15mm" stroke="black" stroke-linecap="square" />
+</svg>

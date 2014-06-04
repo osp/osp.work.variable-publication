@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="3mm" height="3mm" viewBox="1 1 5 5">
+    <symbol id="shape" viewBox="0 0 3 3">
+        <circle cx="1" cy="1" r="1" color="black"></circle>
+    </symbol>
+    <use xlink:href="#shape" x="0" y="0" width="3" height="3"/>
+    <use xlink:href="#shape" x="5" y="0" width="3" height="3"/>
+    <use xlink:href="#shape" x="2.5" y="2.5" width="3" height="3"/>
+    <use xlink:href="#shape" x="0" y="5" width="3" height="3"/>
+    <use xlink:href="#shape" x="5" y="5" width="3" height="3"/>
+    <!-- <use xlink:href="#shape" x="2.5" y="2.5" width="1" height="1"/> -->
+</svg>
