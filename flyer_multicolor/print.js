@@ -1,5 +1,6 @@
 // Choose the number of pages of the document
-var nb_page = 3;
+//var nb_page = 3;
+var nb_page = $(".preview-page").length;
 
 
 // Loads main content into <section id="container">
@@ -29,12 +30,23 @@ $(window).load(function(){
 
 
     // __________________________________ PRINT MARKS __________________________________ //
+    //var doc_height = $("body").height();
+    //var page_height = $("#master-page").height(); 
+
+    //for (i = 1; i <= nb_page; i++){
+        //$("#master-page").clone().addClass("preview-page").attr("id","page-"+i).insertBefore($("#master-page"));
+    //}
+    //$("#master-page").hide();
     var doc_height = $("body").height();
     var page_height = $("#master-page").height(); 
 
-    for (i = 1; i <= nb_page; i++){
-        $("#master-page").clone().addClass("preview-page").attr("id","page-"+i).insertBefore($("#master-page"));
-    }
+    $(".preview-page").each(function(){
+        $(this).append("<div class='inside'>");
+        $("#master-page").children().clone().appendTo($(".inside", $(this)));
+        $(".moveable", $(this)).appendTo($(".inside", $(this)));
+        $(".titre-courant", $(this)).appendTo($(".inside", $(this)));
+        $(".images-chant", $(this)).appendTo($(".inside", $(this)));
+    });
     $("#master-page").hide();
 
 
