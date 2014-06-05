@@ -5,12 +5,19 @@ body {
     font-size: 8pt;
     line-height: 1.3em;
 }
-
+ a{
+     text-decoration:none;
+     color:black;
+     }
+img{
+   margin:0px 2px 6px 0px; 
+    
+    }
 h1 {
 	-webkit-region-break-before: always;
-	    font-family: PropCourierSans;
+	    font-family: Crickx;
 	    font-size: 2em;
-	line-height: 1.4em;
+	line-height: 1em;
 }
 
 #projects article img {
@@ -24,9 +31,9 @@ h1 {
 	margin-right: 0.5em;
 }
 
-#projects article div {
+/*#projects article div {
     display: inline;
-	}
+	}*/
 
 /*#projects article div p {
     display: inline;
@@ -36,24 +43,50 @@ h1 {
 h1 span:nth-of-type(2n) {
     position: relative;
     top: 2px;
+    line-height: 1em;
 }
 p span:nth-of-type(4n) {
     position: relative;
     top: 1px;
+
 }
 
+.author span:nth-of-type(4n){
+        color:red;
+        text-decoration:underline;
+        }
+
 p + p {
-    text-indent: 1.5em;
+    text-indent: 1em;
+}
+
+header{
+    margin-bottom:10px;
+	p + p {
+	    text-indent: 0em;
+	}
 }
 div[lang="nl"] p {
     padding-left: 3em;
 }
 div[lang="fr"] p {
     padding-left: 1.5em;
-}
-div[lang="en"] p {
 
 }
+div[lang="en"] p {
+}
+
+div[lang="nl"] {
+    margin-bottom:7px;
+
+}
+div[lang="fr"] {
+        margin-bottom:7px;
+}
+div[lang="en"] {
+        margin-bottom:7px;
+}
+
 .column20 {
     float: left;
     height: 100%;
@@ -74,8 +107,20 @@ div[lang="en"] p {
         padding-left: 0.5em;
     }
 }
+#colophon2 div {
+    display: inline;
+    
+    &:after {
+        content: " * ";
+    }
+}
+#colophon2 ul,
+#colophon2 p {
+    display: inline;
+    }
 
-#colophon li {
+#colophon li,
+#colophon2 li {
     display: inline;
     
     &:after {
@@ -85,4 +130,21 @@ div[lang="en"] p {
 #colophon img {
     max-width: 80px;
 }
+.constant{
+    font-size: 0.8em;
+    line-height:1em;
+    }
+.thanks{
+    margin-top: 30px;
+
+    }
+#intro li {
+    display: inline;
+    
+    &:after {
+        content: " * ";
+    }
+}
+
+#page-31 .footer {display: none;}
 
